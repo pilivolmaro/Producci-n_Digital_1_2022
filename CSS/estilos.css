@@ -418,6 +418,12 @@ h1{
 
 
 /* Director */
+
+#maindirector{
+    display: flex;
+    justify-content: space-between;
+}
+
 .fotoynombre{
     display: flex;
     justify-content: flex-start;
@@ -430,7 +436,15 @@ h1{
     display: inline-block;
     margin-top: 30px;
     margin-left: 15px;
+
 }
+.fotodirector img{
+    max-width: 250px;
+    max-height: 170px;
+    width: 100%;
+    height: 100%;
+}
+
 .nombredamian{
     display: inline-block;
     margin-left: 20px;
@@ -448,7 +462,6 @@ h1{
 .biografía{
     text-align: justify;
     margin-left: 20px;
-    margin-right: 350px;
     margin-bottom: 30px;
 
 }
@@ -461,9 +474,16 @@ h1{
 }
 
 .aside{
-    width: 20%;
-    margin-left: 3%;
-
+    width: 100%;
+    padding-top: 10%;
+    padding-left: 3%;
+    padding-right: 2%;
+}
+.aside img{
+    max-height: 150px;
+    max-width: 250px;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -496,6 +516,7 @@ h1{
     font-weight: 500;
     margin-bottom: 50px;
 }
+
 
 
 /* footer */
