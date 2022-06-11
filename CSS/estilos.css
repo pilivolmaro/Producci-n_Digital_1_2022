@@ -9,10 +9,13 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding-bottom: 0px;
 }
 .body{
     background-image: linear-gradient(transparent, #0f1a19), url(../img/simuladores_actuales_copia.jpg);
-    padding: 160px 20px;
+    margin-top: 20px;
+    padding-top:200px;
+    padding-bottom: 0px;
 }
 
 
@@ -50,55 +53,58 @@ h3{
 }
 
 .cajas{
-    align-content: center;
     display: flex;
+    align-content: center;
     justify-content: center;
     justify-content: space-around;
-    padding: 5%;
+    padding: 1%;
+    width: 100%;
+    padding-top: 5%;
 }
 .caja1{
-
-    height: 290px;
+    height: 100%;
     width: 20%;
     text-align: center;
-    border-radius: 5%;
+    border-radius: 3%;
 }
 .caja2{
-    height: 290px;
+    height: 100%;
     width: 20%;
-    
     text-align: center;
-    border-radius: 5%;
+    border-radius: 3%;
 }
 
 .caja3{
-    height: 290px;
+    height: 100%;
     width: 20%;
-    
     text-align: center;
-    border-radius: 5%;
+    border-radius: 3%;
 }
 .caja4{
-    height: 290px;
+    height: 100%;
     width: 20%;
-    
     text-align: center;
-    border-radius: 5%;
+    border-radius: 3%;
 }
 
 
 .cajas h3{
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 1.5em;
 }
 .cajas p{
     margin-top: 0px;
     margin-bottom: 30px;
     color: #f5f6e4;
     font-weight: 500;
+    font-size: 1.5em;
 }
 .cajas a{
     text-decoration: none;
+}
+.cajas img{
+    width: 100%;
 }
 
 
@@ -127,6 +133,13 @@ header {
     padding-right: 0%;
     margin-right: 0%;
 }
+
+
+.icon{
+    display: none;
+}
+
+
 .topnav{
     font-family: 'Lexend Deca', sans-serif;
     color: #f5f6e4;
@@ -142,6 +155,7 @@ header {
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
+    height: 70px;
 }
 .lossimuladores{
     display: inline-block;
@@ -165,6 +179,7 @@ header {
 .topnav .listanav a{
     text-decoration: none;
     color: #f5f6e4;
+    font-size: 20px;
 }
 
 
@@ -212,7 +227,7 @@ h1{
 }
 
 .titulosinopsis{
-    font-size: 40px;
+    font-size: 50px;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 500;
     margin-top: 5px;
@@ -225,12 +240,16 @@ h1{
     margin-right: 30px;
     text-align: justify;
 }
+.parrafosinopsis p{
+    font-size: 1.3em;
+}
 
 
 .videoytexto{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: 80px;
+    height: 100%;
 }
 
 
@@ -278,9 +297,9 @@ h1{
 .duracionygenero{ /* caja de duración */
     background-color: #0f1a19;
     display: inline-block;
-    width: 30%;
+    width: 25%;
     color: #0f1a19;
-    margin-left: 20px;
+    margin-left: 1.5%;
     padding-top: 20px;
     border-radius: 5%;
 
@@ -299,14 +318,22 @@ h1{
     margin-right: 26px;
     text-align: justify;
 }
+.duracionygenero p{
+    font-size: 1.3em;
+}
 
 
 
 .video{ /* caja de video */
 
-    width: 60%;
+    width: 55%;
     align-items: center;
-    margin-left: 35px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.video iframe{
+    width: 100%; 
+    height: 400px
 }
 
 .mejoresescenas{ /* caja de mejores escenas */
@@ -314,7 +341,8 @@ h1{
 
     width: 25%;
     justify-content: center;
-    margin-right: 20px;
+    align-items: center;
+    padding-right: 20px;
 
     font-family: 'Radio Canada', sans-serif;
     border-radius: 5%;
@@ -322,21 +350,26 @@ h1{
 
 .titulomejoresescenas{
     color: #f5f6e4;
-    font-size: 25px;
+    font-size: 2.5em;
     margin-top: 15px;
     margin-bottom: 15px;
     font-weight: 400;
+    justify-items: center;
 }
 .titulomejoresescenas a{
     text-decoration: none;
     color: #f5f6e4;
 }
-
+.mejoresescenas img{
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+}
 .minutos{
     margin-top: 12px;
     margin-left: 18px;
     font-weight: 500;
-
+    font-size: 1.5em;
 }
 .minutos a{
     text-decoration: none;
@@ -347,7 +380,7 @@ h1{
 /* personajes */
 
 .titulopersonajes{
-    font-size: 40px;
+    font-size: 50px;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 500;
     margin-top: 30px;
@@ -357,7 +390,8 @@ h1{
     align-content: center;
     display: flex;
     justify-content: space-around;
-    padding: 5%;margin-top: 30px;
+    padding: 5%;
+    margin-top: 30px;
 }
 .santos{
     display: inline-block;
@@ -367,9 +401,14 @@ h1{
 }
 .santos a h3{
     margin-top: 10px;
+    font-size: 1.7em;
 }
 .santos a p{
-    margin-top: 5px
+    margin-top: 5px;
+    font-size: 1.3em;
+}
+.santos img{
+    width: 100%;
 }
 
 .ravenna{
@@ -380,9 +419,14 @@ h1{
 }
 .ravenna a h3{
     margin-top: 10px;
+    font-size: 1.7em;
 }
 .ravenna a p{
-    margin-top: 5px
+    margin-top: 5px;
+    font-size: 1.3em;
+}
+.ravenna img{
+    width: 100%;
 }
 
 .medina{
@@ -393,9 +437,14 @@ h1{
 }
 .medina a h3{
     margin-top: 10px;
+    font-size: 1.7em;
 }
 .medina a p{
-    margin-top: 5px
+    margin-top: 5px;
+    font-size: 1.3em;
+}
+.medina img{
+    width: 100%;
 }
 
 .lamponne{
@@ -406,9 +455,14 @@ h1{
 }
 .lamponne a h3{
     margin-top: 10px;
+    font-size: 1.7em;
 }
 .lamponne a p{
-    margin-top: 5px
+    margin-top: 5px;
+    font-size: 1.3em;
+}
+.lamponne img{
+    width: 100%;
 }
 
 .articulodelossimuladores a{
@@ -465,6 +519,14 @@ h1{
     margin-bottom: 30px;
 
 }
+.biografía p{
+    font-size: 1.3em;
+}
+.biografía h2{
+    font-size: 2em;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
 
 .bibliografialossimuladores{
     text-align: justify;
@@ -480,10 +542,14 @@ h1{
     padding-right: 2%;
 }
 .aside img{
-    max-height: 150px;
-    max-width: 250px;
+    max-height: auto;
+    max-width: auto;
     width: 100%;
     height: auto;
+    padding-bottom: 3%;
+}
+.aside p{
+    font-size: 1.3em;
 }
 
 
@@ -496,13 +562,59 @@ h1{
     font-family: 'Radio Canada', sans-serif;
     color: #f5f6e4;
     margin-left: 20px;
+    display: none;
 }
 
 .tituloopiniones{
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 50px;
 }
+.to{
+    font-size: 30px;
+}
+
+
+.titulo_contacto{
+    font-family: 'Radio Canada', sans-serif;
+    color: #f5f6e4;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    margin-top: 70px;
+    font-weight: 500;
+}
+
+.primario label{
+    color: #f5f6e4;
+    font-family: 'Radio Canada', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.primario{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.primario .caja_formulario{
+    width: 60%;
+    padding-right: 10%;
+}
+
+
+.primario .caja_imagen1_formulario{
+    width: 40%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.primario .caja_imagen2_formulario{
+    position: left;
+}
+
+
 
 
 
@@ -521,9 +633,19 @@ h1{
 
 /* footer */
 
-
+footer{
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    background: linear-gradient(transparent, #0f1a19 70%);
+}
 footer .footernav a{
     text-decoration: none;
+    font-size: 1.3em;
+}
+footer .footernav a p{
+    text-decoration: none;
+    font-size: 1em;
 }
 
 .footernav{
@@ -571,9 +693,356 @@ footer .footernav a{
 
 
 .redessociales{
-    display: flex;
-    justify-content: flex-end;
+    padding-top: 5%;
+    align-items: flex-end;
 }
 .redessociales a{
     margin-bottom: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ADAPTACIÓN A CELULAR*/
+@media screen and (max-width: 480px) {
+    nav ul { display: none; }
+    .icon { 
+        display: block; 
+        margin-top: 50px;
+        width: 40px;
+        height: 40px;
+        color: #f5f6e4;
+    }
+
+
+    .lossimuladores{
+        display: none;
+    }
+
+
+
+    /*INDEX*/
+    .body{
+        background-image: linear-gradient(transparent, #0f1a19), url(../img/simuladores_actuales_copia.jpg);
+        margin-top: 20px;
+        padding-top:200px;
+        padding-bottom: 0px;
+        height: 600px;
+    }
+
+
+    .article{
+        height: 400px;
+        margin-bottom: 50px;
+    }
+    .article h2{
+        padding-top: 50px;
+    }
+
+
+    h2{
+        font-size: 40px;
+    }
+    .subtitulo{
+        font-size: 28px;
+    }
+
+
+
+    .cajas{
+        display: block;
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .caja1{
+        width: 100%;
+        text-align: center;
+        border-radius: 5%;
+    }
+    .caja2{
+        width: 100%;
+        
+        text-align: center;
+
+    }
+    
+    .caja3{
+        width: 100%;
+        
+        text-align: center;
+        border-radius: 5%;
+    }
+    .caja4{
+        width: 100%;
+        
+        text-align: center;
+        border-radius: 5%;
+    }
+    
+    
+    .cajas h3{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .cajas p{
+        margin-top: 0px;
+        margin-bottom: 50px;
+        font-size: 1.3em;
+    }
+
+
+    /*FOOTER*/
+    .footer{
+        display: none;
+    }
+    .redessociales{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        padding-top: 8%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .redessociales img{
+        max-width: 2rem;
+    }
+
+
+
+
+
+    /*SINOPSIS*/
+    .titulofueradecalculo{
+        font-size: 20px;
+    }
+    
+    .titulosinopsis{
+        font-size: 40px;
+    }
+    .parrafosinopsis{
+        margin-bottom: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .parrafosinopsis p{
+        font-size: 1.1em;
+    }
+
+
+    .duracionygenero{ /* caja de duración */
+        display: none;
+    }
+
+
+
+    .videoytexto{
+        display: block;
+        margin-bottom: 80px;
+        height: 100%;
+        width: 100%;
+    }
+    .video{ /* caja de video */
+        width: 100%;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .video iframe{
+        width: 100%; 
+        height: 200px
+    }
+    
+    .mejoresescenas{ /* caja de mejores escenas */
+        width: 100%;
+        padding-right: 0px;
+    }
+    
+    .titulomejoresescenas{
+        font-size: 2em;
+        margin-top: 25%;
+    }
+    .titulomejoresescenas a{
+        text-decoration: none;
+        color: #f5f6e4;
+    }
+    .minutos{
+        font-size: 1.1em;
+    }
+
+
+    /*PERSONAJES*/
+
+    .titulopersonajes{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .articulodelossimuladores{
+        display: block;
+        padding: 0%;
+        margin-top: 30%;
+    }
+
+    .santos{
+        display: block;
+        width: 100%;
+        margin-bottom: 40%;
+    }
+    
+    .ravenna{
+        display: block;
+        width: 100%;
+        margin-bottom: 40%;
+    }
+    
+    .medina{
+        display: block;
+        width: 100%;
+        margin-bottom: 40%;
+    }
+
+    .lamponne{
+        display: block;
+        width: 100%;
+        margin-bottom: 40%;
+    }
+
+
+
+    /*DIRECTOR*/
+    #maindirector{
+        display: block;
+    }
+    
+    .fotoynombre{
+        display: block;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    .fotodirector{
+        display: block;
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fotodirector img{
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .nombredamian{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }   
+    .titulodirector{
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .biografía{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .biografía p{
+        font-size: 1.1em;
+    }
+    .biografía h2{
+        font-size: 1.8em;
+        text-align: center;
+    }
+    
+    .bibliografialossimuladores{
+        text-align: justify;
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+    
+    .aside{
+    display: none;
+    }
+
+
+
+
+    /*OPINIONES*/
+    .tituloopiniones{
+        font-size: 40px;
+    }
+    .to{
+        font-size: 20px;
+    }
+    
+    
+    .titulo_contacto{
+        font-size: 30px;
+    }
+    
+    .primario label{
+        font-size: 20px;
+    }
+    
+    .primario{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .primario .caja_formulario{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .primario .caja_imagen1_formulario{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+    .primario .caja_imagen1_formulario img{
+        width: 100%;
+    }
+    
+    .primario .caja_imagen2_formulario{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .primario .caja_imagen2_formularioimg{
+        width: 100%;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+
+    /*MEJORES ESCENAS*/
+    .tituloMJ{
+        font-size: 40px;
+    }
+    .subtituloMJ{
+        font-size: 30px;
+    }
+
+
 }
