@@ -33,20 +33,24 @@
     </head>
 
     <body>    
+
         <header class="header">
-        
+
             <div class="contenedor">
-                <div class="logo"><a href="index.html"><img src="img\Logo en blanco.PNG" alt="home" height="70px" width="70"></a></div>
-                <div class="lossimuladores"><h1 class="titulo">LOS SIMULADORES</h1></div>  
+                <div class="logo"><a href="index.html"><img src="img\Logo en blanco.PNG" alt="home" height="70px"></a></div>
+                <div class="lossimuladores">
+                    <h1 class="titulo">LOS SIMULADORES</h1>
+                </div>
             </div>
     
-    
-            <nav class="topnav">
-
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
-
+    
+            <nav class="topnav" id="topnav">
+    
+                
+    
                 <ul class="listanav">
                     <li><a href="sinopsis.html">SINOPSIS</a></li>
                     <li><a href="personajes.html">PERSONAJES</a></li>
@@ -165,5 +169,15 @@
 
     </body> 
 
+    <script type="text/javascript">
+        function myFunction(){
+            let x = document.getElementById('topnav');
+            if (x.className!=='responsive' ){
+                x.className = 'responsive';
+            } else{
+                x.className = '';
+            }
+        }
+    </script>
 
 </html>
