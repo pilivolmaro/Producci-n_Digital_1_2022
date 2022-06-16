@@ -726,12 +726,35 @@ footer .footernav a p{
         width: 40px;
         height: 40px;
         color: #f5f6e4;
+        text-align: right;
+        padding-right: 2rem;
+        font-size: 1.6rem;
     }
 
+    header{
+        flex-wrap: wrap;
+    }
+    .header{
+        flex-wrap: wrap;
+    }
+
+   header a{
+        flex: 1 0 50%;
+    }
+    header nav{
+        flex-basis: 100%;
+    }
+    nav.responsive ul{
+        display: block;
+        width: 100%;
+    }      
 
     .lossimuladores{
         display: none;
     }
+
+    /*Menú desplegable*/
+
 
 
 
