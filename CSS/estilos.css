@@ -768,6 +768,8 @@ footer .footernav a p{
         padding-top: 10px;
     }
     .topnav{
+        margin-right: 0;
+    }
     #topnav.responsive .listanav li a{
         font-family: 'Lexend Deca', sans-serif;
         color: #f5f6e4;
@@ -1089,6 +1091,17 @@ footer .footernav a p{
     .subtituloMJ{
         font-size: 30px;
     }
+    .galeria{
+        display: block;
 
+    }
+    .example-image-link{
+        display: block;
+    }
 
+    .galeria a img{
+        width: 335px;
+        height: 204px;
+
+    }
 }
