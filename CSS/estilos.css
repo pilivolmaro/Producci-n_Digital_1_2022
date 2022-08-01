@@ -236,9 +236,10 @@ h1{
 
 .parrafosinopsis{
     margin-bottom: 3%;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
     text-align: justify;
+    line-height: 2em;
 }
 .parrafosinopsis p{
     font-size: 1.3em;
@@ -270,6 +271,7 @@ h1{
 }
 .fechapublicacion p{
     font-weight: 500;
+    font-size: 1em;
 }
 .mastrece{
     display: inline-block;
@@ -287,11 +289,11 @@ h1{
     display: inline-block;
     margin-left: 10px;
     color: #f5f6e4;
-    font-size: 20px;
+    font-size: 1.1em;
 }
 .temporadas p{
     font-weight: 500;
-}
+} 
 
 
 .duracionygenero{ /* caja de duración */
@@ -317,6 +319,7 @@ h1{
     margin-left: 18px;
     margin-right: 26px;
     text-align: justify;
+    line-height: 1.5em;
 }
 .duracionygenero p{
     font-size: 1.3em;
@@ -489,7 +492,7 @@ h1{
 .fotodirector{
     display: inline-block;
     margin-top: 30px;
-    margin-left: 15px;
+    margin-left: 55px;
 
 }
 .fotodirector img{
@@ -521,11 +524,16 @@ h1{
 }
 .biografía p{
     font-size: 1.3em;
+    line-height: 1.5em;
 }
 .biografía h2{
     font-size: 2em;
     padding-bottom: 20px;
     padding-top: 40px;
+}
+.biografía section{
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .bibliografialossimuladores{
@@ -538,7 +546,6 @@ h1{
 .aside{
     width: 100%;
     padding-top: 10%;
-    padding-left: 3%;
     padding-right: 2%;
 }
 .aside img{
@@ -549,7 +556,8 @@ h1{
     padding-bottom: 3%;
 }
 .aside p{
-    font-size: 1.3em;
+    font-size: 1.2em;
+    line-height: 1.5em;
 }
 
 
@@ -600,20 +608,29 @@ h1{
 }
 .primario .caja_formulario{
     width: 60%;
-    padding-right: 10%;
 }
 
 
 .primario .caja_imagen1_formulario{
-    width: 40%;
-    padding-left: 2%;
-    padding-right: 2%;
+    width: 25%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.primario #caja_imagen2_formulario{
+    width: 30%;
+}
+.primario #caja_imagen2_formulario img{
+    width: 100%;
+    position: right;
 }
 
-.primario .caja_imagen2_formulario{
-    position: left;
-}
 
+input{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+}
 
 
 
@@ -628,7 +645,6 @@ h1{
     font-weight: 500;
     margin-bottom: 50px;
 }
-
 
 
 /* footer */
@@ -646,6 +662,7 @@ footer .footernav a{
 footer .footernav a p{
     text-decoration: none;
     font-size: 1em;
+    line-height: 1.5;
 }
 
 .footernav{
@@ -884,8 +901,8 @@ footer .footernav a p{
     }
     .parrafosinopsis{
         margin-bottom: 10%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .parrafosinopsis p{
         font-size: 1.1em;
@@ -1010,15 +1027,20 @@ footer .footernav a p{
     }
     
     .biografía{
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 0px;
+        margin-right: 0px;
     }
     .biografía p{
         font-size: 1.1em;
+        line-height: 1.8em;
     }
     .biografía h2{
         font-size: 1.8em;
         text-align: center;
+    }
+    .biografía section{
+        margin-left: 12px;
+        margin-right: 12px;
     }
     
     .bibliografialossimuladores{
@@ -1051,6 +1073,15 @@ footer .footernav a p{
     .primario label{
         font-size: 20px;
     }
+
+    input{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+
+
     
     .primario{
         display: block;
@@ -1071,16 +1102,11 @@ footer .footernav a p{
         width: 100%;
     }
     
-    .primario .caja_imagen2_formulario{
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
+    .primario #caja_imagen2_formulario{
         width: 100%;
     }
-    .primario .caja_imagen2_formularioimg{
+    .primario #caja_imagen2_formulario img{
         width: 100%;
-        padding-left: auto;
-        padding-right: auto;
     }
 
 
@@ -1105,3 +1131,4 @@ footer .footernav a p{
 
     }
 }
+
